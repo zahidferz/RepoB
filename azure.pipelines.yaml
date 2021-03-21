@@ -21,6 +21,3 @@ extends:
   template: AspNetFramework/ProjectAspnet.yaml@gx-devops-yamls
   
 
-
-
-
