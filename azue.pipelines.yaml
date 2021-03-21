@@ -1,0 +1,21 @@
+name: $(SourceBranchName)
+pool:
+  vmImage: 'windows-2019'
+
+trigger:
+  branches:
+    include:
+    - master
+    - develop
+pr: none
+
+resources:
+  repositories:
+  - repository: gx-devops-yamls
+    name: gestionix/gx-devops-yamls
+    type: github
+    endpoint: gx-github
+    ref: master #branch name
+
+extends:
+  template: AspNetFramework/ProjectAspnet.yaml@gx-devops-yamls
