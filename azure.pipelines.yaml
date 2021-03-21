@@ -1,6 +1,6 @@
 name: $(SourceBranchName)
 pool:
-  vmImage: 'windows-2019'
+  vmImage: 'Ubuntu-16.04'
 
 trigger:
   branches:
